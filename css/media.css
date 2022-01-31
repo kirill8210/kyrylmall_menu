@@ -1,0 +1,516 @@
+/*xl*/
+@media screen and (max-width: 1199px) { 
+
+}
+/*lg*/
+@media screen and (min-width: 992px) {
+    i {
+        display: none;
+    }
+
+    .menu_item_link a{
+        display: none;
+
+    }
+    .catalog:hover .menu_item, .brands:hover .menu_item{
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .5s,visibility 0ms;
+        transition-delay: .3s;
+    }
+    .catalog .menu_item{
+        /*position: absolute;*/
+        /*top: 50px;*/
+        left: 50%;
+        min-width: 500px;
+        margin-left: -250px;
+        display: none;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s linear .4s,visibility 0s linear .41s;
+    }
+
+    .brands .menu_item{
+        /*display: flex;*/
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        min-width: 500px;
+        margin-left: -250px;
+        display: none;
+        overflow: hidden;
+        opacity: 1;
+        visibility: hidden;
+        transition: opacity .3s linear .4s,visibility 0s linear .41s;
+    }
+
+    .brands .menu_item{
+        overflow: hidden;
+        opacity: 1;
+        visibility: hidden;
+        transition: opacity .1s linear .4s,visibility 0s linear .41s;
+    }
+    .menu_link:hover{
+        color: #6610f2;
+    }
+    .submenu li a:hover{
+        color: #721c24;
+    }
+}
+@media screen and (max-width: 992px) {
+    .menu{
+        background: #fff;
+        /*display: flex!important;*/
+        flex-direction: column!important;
+        justify-content: start!important;
+        height: calc(100vh - 50px)!important;
+        left: 0!important;
+        position: fixed!important;
+        top: 50px!important;
+        transition: left .6s ease-in-out .1s!important;
+        box-sizing: border-box;
+        min-width: 320px!important;
+        padding: 0 24px 32px!important;
+        z-index: 1!important;
+    }
+    .menu > div{
+        align-items: center!important;
+        border-bottom: 1px solid #e9eaed!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        height: 50px!important;
+        flex-shrink: 0;
+    }
+    .menu_link{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #0a0a0a;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: .03em;
+        line-height: 16px;
+        margin: 0;
+        text-transform: uppercase;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        padding: 0!important;
+    }
+    .menu_link:hover{
+        color: #0a0a0a;
+    }
+
+    i {
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block!important;
+        padding: 3px;
+    }
+
+    .i_right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .i_left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    .menu_item_link a{
+        display: flex!important;
+        align-items: center!important;
+        justify-content: space-between!important;
+        font-weight: 500!important;
+        font-size: 12px;
+        line-height: 50px!important;
+        color: #565a5e!important;
+        text-align: center!important;
+        text-transform: uppercase;
+        height: 50px!important;
+        position: relative!important;
+    }
+    .menu_item_link{
+        position: relative!important;
+    }
+    .menu_item_link:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #e9eaed;
+        display: block;
+    }
+    .menu_item{
+        display: flex!important;
+        flex-direction: column!important;
+        background: #ffffff!important;
+        /*color: #ffffff;*/
+        height: calc(100vh - 50px)!important;
+        left: -100%!important;
+        position: fixed!important;
+        top: 50px!important;
+        transition: left .6s ease-in-out .1s;
+        min-width: 320px!important;
+        /*max-width: 372px;*/
+        overflow: auto!important;
+        padding: 0 24px 32px!important;
+        z-index: 10!important;
+    }
+
+    .menu_item.open {
+        left: 0!important;
+    }
+
+    .submenu{
+        width: 100%!important;
+        flex-direction: column!important;
+    }
+
+    .submenu_item_link, .submenu_item_brands {
+        font-weight: 500!important;
+        font-size: 12px!important;
+        line-height: 16px!important;
+        color: #0a0a0a!important;
+        display: flex!important;
+        align-items: center!important;
+        height: 49px!important;
+        /*width: 100%;*/
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+    }
+    .catalog .submenu_item {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        min-width: 120px;
+        min-height: auto!important;
+        border-left: 0!important;;
+        padding-left: 0!important;;
+    }
+    .brands .submenu_item {
+        /*display: flex;*/
+        /*align-items: center;*/
+        justify-content: start!important;
+        /*min-width: 120px;*/
+        min-height: auto!important;
+        border-left: 0!important;
+        padding-left: 0!important;
+    }
+    .catalog .submenu_item:last-child, .brands .submenu_item:last-child {
+         border-right: 0!important;
+         padding-right: 0!important;
+    }
+
+    .submenu_item_link:before, .submenu_item_link:after {
+        background: #565a5e;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 10px;
+    }
+    .submenu_item_link:after {
+        transform: rotate(90deg);
+        transition: transform .3s ease;
+    }
+
+    .submenu_open .submenu_item_link:after {
+        transform: rotate(0deg);
+    }
+
+    .submenu_item {
+        border-bottom: 1px solid #e9eaed;
+        width: 100%;
+    }
+
+    .submenu_item > .sub_submenu {
+        display: none;
+    }
+
+    .submenu_item.submenu_open > .sub_submenu {
+        display: block;
+    }
+
+    .sub_submenu{
+        padding: 0 0 0 10px!important;
+    }
+
+    .sub_submenu li{
+        margin-bottom: 15px!important;
+    }
+
+    .sub_submenu li a{
+        font-size: 14px!important;
+        line-height: 24px!important;
+        color: #565a5e!important;
+    }
+
+}
+/*md*/
+@media screen and (max-width: 767.98px) {
+
+}
+/*sm*/
+@media (max-width: 575.98px) {
+
+}
+
+/*// let isMobile = {*/
+/*//     Android: function() {return navigator.userAgent.match(/Android/i);},*/
+/*//     BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},*/
+/*//     iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},*/
+/*//     Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},*/
+/*//     Windows: function() {return navigator.userAgent.match(/IEMobile/i);},*/
+/*//     any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}*/
+/*// };*/
+/*//*/
+/*// let body = document.querySelector('body');*/
+/*// let i;*/
+/*// if (isMobile.any()) {*/
+/*// body.classList.add('touch');*/
+/*// let arrow = document.querySelectorAll('.arrow');*/
+/*// for ( i = 0; i < arrow.length; i++ ) {*/
+/*//     let thisLink = arrow[i].previousElementSibling;*/
+/*//     let subMenu = arrow[i].nextElementSibling;*/
+/*//     let thisArrow = arrow[i];*/
+/*//     thisLink.classList.add('parent');*/
+/*// let divs = document.querySelectorAll('.sub_menu_list');*/
+/*//*/
+/*// divs.forEach(item =>{*/
+/*//     arrow[i].addEventListener('click', (e) =>{*/
+/*//         divs.forEach(el=>{ el.classList.remove('open'); });*/
+/*//         subMenu.classList.toggle('open')*/
+/*//         thisArrow.classList.toggle('active')*/
+/*//     })*/
+/*// })*/
+/*//     arrow[i].addEventListener('click', function () {*/
+/*//        subMenu.classList.toggle('open');*/
+/*//        thisArrow.classList.toggle('active')*/
+/*//     })*/
+/*// }*/
+/*// } else {*/
+/*     //     body.classList.add('mouse');*/
+/*     // }*/
+
+/*// const list = document.querySelectorAll('.CatalogMenu li a');*/
+/*// list.forEach(item =>{*/
+/*//     item.addEventListener('click', (e) =>{*/
+/*//         list.forEach(el=>{ el.classList.remove('active'); });*/
+/*//         item.classList.add('active')*/
+/*//     })*/
+/*// });*/
+
+/*<!--<header>-->*/
+/*<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->*/
+/*<!--        <div class="container-fluid">-->*/
+/*<!--            <a class="navbar-brand" href="#">KYRYLMALL</a>-->*/
+/*<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->*/
+/*<!--                <span class="navbar-toggler-icon"></span>-->*/
+/*<!--            </button>-->*/
+/*<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->*/
+/*<!--                <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->*/
+/*<!--                    <li class="nav-item dropdown catalog">-->*/
+/*<!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->*/
+/*<!--                            Catalog-->*/
+/*<!--                        </a>-->*/
+/*<!--                        <ul class="dropdown-menu menu_catalog d-flex justify-content-between" aria-labelledby="navbarDropdown1">-->*/
+/*<!--                            <li>-->*/
+/*<!--                                <div class="dropdown-item">-->*/
+/*<!--                                    <div class="menu_catalog_block d-flex justify-content-center align-items-center">-->*/
+/*<!--                                        <a class="d-flex justify-content-center">Одежда</a>-->*/
+/*<!--                                        <div>-->*/
+/*<!--                                            <img src="img/1ck.jpg" alt="calvin_klein">-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                    </div>-->*/
+/*<!--                                    <div class="dropdown-submenu submenu">-->*/
+/*<!--                                        <div class="li_second">-->*/
+/*<!--                                            <a href="#">Футболки</a>-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                        <div class="li_second">-->*/
+/*<!--                                            <a href="#">Кофты</a>-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                    </div>-->*/
+/*<!--                                </div>-->*/
+/*<!--                            </li>-->*/
+/*<!--                            <li>-->*/
+/*<!--                                <div class="dropdown-item">-->*/
+/*<!--                                    <div class="menu_catalog_block d-flex justify-content-center align-items-center">-->*/
+/*<!--                                        <a class="d-flex justify-content-center">Аксессуары</a>-->*/
+/*<!--                                        <div>-->*/
+/*<!--                                            <img src="img/1ck.jpg" alt="calvin_klein">-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                    </div>-->*/
+/*<!--                                    <div class="submenu">-->*/
+/*<!--                                        <div class="li_second">-->*/
+/*<!--                                            <a href="#">Кошельки</a>-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                        <div class="li_second">-->*/
+/*<!--                                            <a href="#">Сумки</a>-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                        <div class="li_second">-->*/
+/*<!--                                            <a href="#">Рюкзаки</a>-->*/
+/*<!--                                        </div>-->*/
+/*<!--                                    </div>-->*/
+/*<!--                                </div>-->*/
+/*<!--                            </li>-->*/
+/*<!--                        </ul>-->*/
+/*<!--                    </li>-->*/
+/*<!--                    <li class="nav-item dropdown brands">-->*/
+/*<!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->*/
+/*<!--                            Brands-->*/
+/*<!--                        </a>-->*/
+/*<!--                        <ul class="dropdown-menu menu_brands d-flex justify-content-between" aria-labelledby="navbarDropdown">-->*/
+/*<!--                            <li>-->*/
+/*<!--                                <a class="dropdown-item d-flex align-items-center" href="#">-->*/
+/*<!--                                    <p class="d-flex justify-content-center">Calvin Klein</p>-->*/
+/*<!--                                    <div>-->*/
+/*<!--                                        <img src="img/1ck.jpg" alt="calvin_klein">-->*/
+/*<!--                                    </div>-->*/
+/*<!--                                </a>-->*/
+/*<!--                            </li>-->*/
+/*<!--                            <li><a class="dropdown-item d-flex align-items-center" href="#">-->*/
+/*<!--                                <p class="d-flex justify-content-center">Levis</p>-->*/
+/*<!--                                <div>-->*/
+/*<!--                                    <img src="img/1ck.jpg" alt="calvin_klein">-->*/
+/*<!--                                </div>-->*/
+/*<!--                            </a>-->*/
+/*<!--                            </li>-->*/
+/*<!--                            <li><a class="dropdown-item d-flex align-items-center" href="#">-->*/
+/*<!--                                <p class="d-flex justify-content-center">Jack Jones</p>-->*/
+/*<!--                                <div>-->*/
+/*<!--                                    <img src="img/1ck.jpg" alt="calvin_klein">-->*/
+/*<!--                                </div>-->*/
+/*<!--                            </a>-->*/
+/*<!--                            </li>-->*/
+/*<!--                        </ul>-->*/
+/*<!--                    </li>-->*/
+/*<!--                    <li class="nav-item">-->*/
+/*<!--                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->*/
+/*<!--                    </li>-->*/
+/*<!--                </ul>-->*/
+/*<!--                <form class="d-flex">-->*/
+/*<!--                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->*/
+/*<!--                    <button class="btn btn-outline-success" type="submit">Search</button>-->*/
+/*<!--                </form>-->*/
+/*<!--            </div>-->*/
+/*<!--        </div>-->*/
+/*<!--    </nav>-->*/
+/*<!--</header>-->*/
+
+
+
+/*<!--<nav class="menu">-->*/
+/*<!--    <ul class="menu_list">-->*/
+/*<!--        <li>-->*/
+/*<!--            <a href="#" class="menu_link">catalog</a>-->*/
+/*<!--            <span class="menu_arrow arrow"></span>-->*/
+/*<!--            <ul class="sub_menu_list">-->*/
+/*<!--                <li>-->*/
+/*<!--                    <a href="#" class="sub_menu_link">clothes</a>-->*/
+/*<!--                    <span class="sub_menu_arrow arrow"></span>-->*/
+/*<!--                    <ul class="sub_sub_menu_list">-->*/
+/*<!--                        <li><a href="#" class="sub_sub_menu_link">tshirt</a></li>-->*/
+/*<!--                        <li><a href="#" class="sub_sub_menu_link">sweater</a></li>-->*/
+/*<!--                    </ul>-->*/
+/*<!--                </li>-->*/
+/*<!--                <li>-->*/
+/*<!--                    <a href="#" class="sub_menu_link">acc</a>-->*/
+/*<!--                    <span class="sub_menu_arrow arrow"></span>-->*/
+/*<!--                    <ul class="sub_sub_menu_list">-->*/
+/*<!--                        <li><a href="#" class="sub_sub_menu_link">bag</a></li>-->*/
+/*<!--                        <li><a href="#" class="sub_sub_menu_link">other</a></li>-->*/
+/*<!--                    </ul>-->*/
+/*<!--                </li>-->*/
+/*<!--            </ul>-->*/
+/*<!--        </li>-->*/
+/*<!--        <li>-->*/
+/*<!--            <a href="#" class="menu_link">brands</a>-->*/
+/*<!--            <span class="menu_arrow arrow"></span>-->*/
+/*<!--            <ul class="sub_menu_list">-->*/
+/*<!--                <li><a href="#" class="sub_menu_link">calvin</a></li>-->*/
+/*<!--                <li><a href="#" class="sub_menu_link">levis</a></li>-->*/
+/*<!--            </ul>-->*/
+/*<!--        </li>-->*/
+/*<!--    </ul>-->*/
+/*<!--</nav>-->*/
+/*<!--<ul class="CatalogMenu">-->*/
+/*<!--    <li><a href="#">Все кухни</a></li>-->*/
+/*<!--    <li><a href="#">Новинки</a></li>-->*/
+/*<!--    <li><a href="#">Классические</a></li>-->*/
+/*<!--    <li><a href="#">Современные</a></li>-->*/
+/*<!--    <li><a href="#">Готовые кухни</a></li>-->*/
+/*<!--</ul>-->*/
+
+/*<!--<div class="accordion">-->*/
+/*<!--    <div class="accordion-panel">-->*/
+/*<!--        <h3 class="accordion-header">clothes</h3>-->*/
+/*<!--        <ul class="accordion-body">-->*/
+/*<!--            <li><a href="#" class="sub_sub_menu_link">tshirt</a></li>-->*/
+/*<!--            <li><a href="#" class="sub_sub_menu_link">sweater</a></li>-->*/
+/*<!--        </ul>-->*/
+/*<!--    </div>-->*/
+/*<!--    <div class="accordion-panel">-->*/
+/*<!--        <h3 class="accordion-header">acc</h3>-->*/
+/*<!--        <ul class="accordion-body">-->*/
+/*<!--            <li><a href="#" class="sub_sub_menu_link">bag</a></li>-->*/
+/*<!--            <li><a href="#" class="sub_sub_menu_link">wallet</a></li>-->*/
+/*<!--        </ul>-->*/
+/*<!--    </div>-->*/
+/*<!--</div>-->*/
+
+/*<!--<div class="menu">-->*/
+/*<!--    <div>-->*/
+/*<!--        <a href="#" class="menu_link">Catalog<i class="i_right"></i></a>-->*/
+/*<!--        <div class="menu_item">-->*/
+/*<!--            <div class="menu_item_link">-->*/
+/*<!--                <a href="#"><i class="i_left"></i>Catalog</a>-->*/
+/*<!--            </div>-->*/
+/*<!--            <div class="submenu">-->*/
+/*<!--                <div class="submenu_item">-->*/
+/*<!--                    <div class="submenu_item_link">Clothes</div>-->*/
+/*<!--                    <ul class="sub_submenu">-->*/
+/*<!--                        <li><a href="#">T-shirt</a></li>-->*/
+/*<!--                        <li><a href="#">Sweatshirts</a></li>-->*/
+/*<!--                    </ul>-->*/
+/*<!--                </div>-->*/
+/*<!--                <div class="submenu_item">-->*/
+/*<!--                    <div class="submenu_item_link">Accessories</div>-->*/
+/*<!--                    <ul class="sub_submenu">-->*/
+/*<!--                        <li><a href="#">All Accessories</a></li>-->*/
+/*<!--                        <li><a href="#">Bags</a></li>-->*/
+/*<!--                        <li><a href="#">Wallets</a></li>-->*/
+/*<!--                    </ul>-->*/
+/*<!--                </div>-->*/
+/*<!--            </div>-->*/
+/*<!--        </div>-->*/
+/*<!--    </div>-->*/
+/*<!--    <div>-->*/
+/*<!--        <a href="#" class="menu_link">Brands<i class="i_right"></i></a>-->*/
+/*<!--        <div class="menu_item">-->*/
+/*<!--            <div class="menu_item_link">-->*/
+/*<!--                <a href="#"><i class="i_left"></i>Brands</a>-->*/
+/*<!--            </div>-->*/
+/*<!--            <div class="submenu_item">-->*/
+/*<!--                <a href="#" class="submenu_item_brands">Calvin Klein</a>-->*/
+/*<!--            </div>-->*/
+/*<!--            <div class="submenu_item">-->*/
+/*<!--                <a href="#" class="submenu_item_brands">Levis</a>-->*/
+/*<!--            </div>-->*/
+/*<!--            <div class="submenu_item">-->*/
+/*<!--                <a href="#" class="submenu_item_brands">Guess</a>-->*/
+/*<!--            </div>-->*/
+/*<!--            <div class="submenu_item">-->*/
+/*<!--                <a href="#" class="submenu_item_brands">Jack Jones</a>-->*/
+/*<!--            </div>-->*/
+/*<!--        </div>-->*/
+/*<!--    </div>-->*/
+/*<!--</div>-->*/

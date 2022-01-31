@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KyrylMall</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<header>
+    <nav class="col-width header">
+        <a class="logo" href="#">KYRYLMALL</a>
+        <div class="menu">
+            <div class="catalog">
+                <a href="#" class="menu_link">Catalog<i class="i_right"></i></a>
+                <div class="menu_item">
+                    <div class="menu_item_link">
+                        <a href="#"><i class="i_left"></i>Catalog</a>
+                    </div>
+                    <div class="submenu">
+                        <div class="submenu_item">
+                            <div class="submenu_item_link">Clothes</div>
+                            <ul class="sub_submenu">
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu_item">
+                            <div class="submenu_item_link">Accessories</div>
+                            <ul class="sub_submenu">
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Wallets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands">
+                <a href="#" class="menu_link">Brands<i class="i_right"></i></a>
+                <div class="menu_item">
+                    <div class="menu_item_link">
+                        <a href="#"><i class="i_left"></i>Brands</a>
+                    </div>
+                    <div class="submenu_item">
+                        <a href="#" class="submenu_item_brands">Calvin Klein</a>
+                    </div>
+                    <div class="submenu_item">
+                        <a href="#" class="submenu_item_brands">Levis</a>
+                    </div>
+                    <div class="submenu_item">
+                        <a href="#" class="submenu_item_brands">Guess</a>
+                    </div>
+                    <div class="submenu_item">
+                        <a href="#" class="submenu_item_brands">Jack Jones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="/img/icons_search.png" alt="">
+        </div>
+        <div class="icons">
+            <img src="img/icons_like.png" alt="">
+            <img src="img/icons_account.png" alt="">
+            <img src="img/icons_cart.png" alt="">
+        </div>
+    </nav>
+</header>
+<section class="offer_section">
+    <div class="col-width block">
+        <div class="block_left">
+            <h1>НОВАЯ КОЛЛЕКЦИЯ ВЕСНА-ЛЕТО 2022</h1>
+            <div class="offer_button">
+                <button>В каталог</button>
+            </div>
+            <div class="slider">
+                <div class="offer_sale_img">
+                    <img data-lazy="img/ck2.jpg"/>
+<!--                    <img src="img/ck2.jpg" alt="">-->
+                </div>
+                <div class="offer_sale_img">
+                    <img data-lazy="img/ck6.jpg"/>
+                </div>
+                <div class="offer_sale_img">
+                    <img data-lazy="img/ck2.jpg"/>
+                </div>
+                <div class="offer_sale_img">
+                    <img data-lazy="img/ck6.jpg"/>
+                </div>
+            </div>
+        </div>
+        <div class="block_right">
+            <img src="img/ck1.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(".slider").slick({
+        autoplay: true,
+        arrow: true,
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: "<img src='img/arrow_prev.png' class='prev'>",
+        nextArrow: "<img src='img/arrow_next.png' class='next'>",
+    });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
